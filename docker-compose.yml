@@ -5,9 +5,7 @@ services :
     ports :
       - "80:80"
     volumes : 
-      - ./html/:/usr/share/nginx/html/
+      - ../build/:/usr/share/nginx/html/
       - ./conf/:/etc/nginx/conf.d/
   backend : 
     image : rebaseitlabs/cuttime:latest
-
-
